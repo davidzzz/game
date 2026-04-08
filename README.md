@@ -1,10 +1,10 @@
-# Arcade: 2048 + Tic Tac Toe + Snake + Pacman (React + TypeScript)
+# Arcade Mini-Game Collection (React + TypeScript)
 
-A React + TypeScript mini-arcade app with four selectable games.
+A React + TypeScript mini-arcade app with multiple selectable games and different gameplay styles.
 
 ## Included games
 - **2048**
-  - Classic 4x4 gameplay
+  - Classic 4x4 merge gameplay
   - Keyboard + on-screen controls
   - Score + persistent best score
   - Endless mode unlock after hitting 2048
@@ -17,6 +17,21 @@ A React + TypeScript mini-arcade app with four selectable games.
 - **Pacman**
   - Maze navigation and pellet collection
   - Chase ghost and win/lose conditions
+- **Bomberman**
+  - Grid movement with bombs and blast zones
+  - Obstacles, enemies, and level survival mechanics
+- **Number Bubble Hunt**
+  - A target number is shown each level
+  - Click bubble expressions that evaluate to the target
+  - Multiple levels with increasing difficulty (more bubbles, tighter timers, mixed operations)
+  - Lives, scoring, and level progression
+
+## Number Bubble Hunt objective
+1. Watch the **Target Number** at the top of the game.
+2. Click only bubbles whose math expression equals that target.
+3. Clear all required matching bubbles before time runs out.
+4. Avoid wrong clicks to preserve lives.
+5. Advance through progressively harder levels.
 
 ## Component structure
 - `src/App.tsx`: top-level game selector
@@ -24,6 +39,8 @@ A React + TypeScript mini-arcade app with four selectable games.
 - `src/games/TicTacToeGame.tsx`: all Tic Tac Toe logic/UI
 - `src/games/SnakeGame.tsx`: all Snake logic/UI
 - `src/games/PacmanGame.tsx`: all Pacman logic/UI
+- `src/games/BombermanGame.tsx`: all Bomberman logic/UI
+- `src/games/NumberBubbleGame.tsx`: all Number Bubble Hunt logic/UI
 
 ## Scripts
 - `npm run dev` - start development server.

@@ -4,8 +4,9 @@ import PacmanGame from './games/PacmanGame';
 import SnakeGame from './games/SnakeGame';
 import TicTacToeGame from './games/TicTacToeGame';
 import BombermanGame from './games/BombermanGame';
+import NumberBubbleGame from './games/NumberBubbleGame';
 
-type GameType = '2048' | 'tic-tac-toe' | 'snake' | 'pacman' | 'bomberman';
+type GameType = '2048' | 'tic-tac-toe' | 'snake' | 'pacman' | 'bomberman' | 'number-bubbles';
 
 const App = () => {
   const [selectedGame, setSelectedGame] = useState<GameType>('2048');
@@ -34,6 +35,9 @@ const App = () => {
             <button type="button" className={selectedGame === 'bomberman' ? 'active' : ''} onClick={() => setSelectedGame('bomberman')}>
               Bomberman
             </button>
+            <button type="button" className={selectedGame === 'number-bubbles' ? 'active' : ''} onClick={() => setSelectedGame('number-bubbles')}>
+              Number Bubbles
+            </button>
           </div>
         </header>
 
@@ -42,6 +46,7 @@ const App = () => {
         {selectedGame === 'snake' && <SnakeGame />}
         {selectedGame === 'pacman' && <PacmanGame />}
         {selectedGame === 'bomberman' && <BombermanGame />}
+        {selectedGame === 'number-bubbles' && <NumberBubbleGame />}
       </section>
     </main>
   );

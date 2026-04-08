@@ -25,6 +25,10 @@ A React + TypeScript mini-arcade app with multiple selectable games and differen
   - Click bubble expressions that evaluate to the target
   - Multiple levels with increasing difficulty (more bubbles, tighter timers, mixed operations)
   - Lives, scoring, and level progression
+- **Chess**
+  - Player (White) vs Computer (Black)
+  - Legal move validation, check/checkmate/stalemate detection
+  - Four AI difficulty levels: Beginner, Intermediate, Advanced, Professional
 
 ## Number Bubble Hunt objective
 1. Watch the **Target Number** at the top of the game.
@@ -41,6 +45,7 @@ A React + TypeScript mini-arcade app with multiple selectable games and differen
 - `src/games/PacmanGame.tsx`: all Pacman logic/UI
 - `src/games/BombermanGame.tsx`: all Bomberman logic/UI
 - `src/games/NumberBubbleGame.tsx`: all Number Bubble Hunt logic/UI
+- `src/games/ChessGame.tsx`: all Chess logic/UI
 
 ## Scripts
 - `npm run dev` - start development server.
